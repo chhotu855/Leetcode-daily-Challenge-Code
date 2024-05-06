@@ -14,7 +14,7 @@ public:
       ListNode* temp = head;
       stack<ListNode*>st;
       while(temp){
-        while(!st.empty() && st.top()->val < temp->val){
+        while(!st.empty() && st.top()->val < temp->val){ 
             st.pop();
         }
         st.push(temp);
